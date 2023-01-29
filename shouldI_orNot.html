@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Should I... Or not? </title>
+      <style>
+      .Btn{
+          border:none;
+          border-radius:5px;
+          color:#00007B;
+          background-color:#AFEEEE;
+          font-family: avenir,arial;
+          font-size: 100%;
+          margin: 1px;
+          height: 26px;
+          width: 128px;
+      }
+      .drop{
+          border:none;
+          border-radius:5px;
+          color:#00007B;
+          background-color:white;
+          font-family: avenir,arial;
+          font-size: 100%;
+          margin: 1px;
+      }
+      .BtnAns{
+        border:none;
+        border-radius:5px;
+        color:#00007B;
+        background-color:#AFEEEE;
+        font-family: avenir,arial;
+        font-size: 100%;
+        margin: 1px;
+        height: 40px;
+        width: 400px;
+      }
+      .text{
+          margin-left: 30px;
+          margin-right: 30px;
+          font-family: avenir,arial;
+      }
+      .questionBox{
+          border-radius:5px;
+          color:#00007B;
+          background-color:white;
+          font-family: avenir,arial;
+          font-size: 100%;
+          height: 26px;
+          width: 900px;
+          text-align:center;
+      }
+      .tableInputBox{
+          border-radius:5px;
+          color:#00007B;
+          background-color:white;
+          font-family: avenir,arial;
+          font-size: 100%;
+          height: 26px;
+          width: 500px;
+      }
+      </style>
+      <script>
+
+        function goEng(){
+            document.getElementById("heading").innerHTML="<h1 align='center'>"+"Should I... Or not?"+"</h1>";
+            document.getElementById("middle").innerHTML="<center>"+"Now is the time to find an answer to you question! So I invite you to enter your question then fill the Pros and Cons table. While filling this table of course if one pros or cons is really important you can show it (write it only in capital letters to show it's REALLY important) and if its the opposite, then I invite you to write it all in lower case, as if it's only a whisper because you know it's not that important. Then just click on the Outcome button below."+"</center>"+"<br>"+"<br>"+"<center>"+"<b>"+"Enter your question: "+"</b>"+"<input type='text' class='questionBox' id='questionEng' value=''>"+"</center>"+"<br>"
+            +"<table align='center'>"
+          		+"<tr>"
+          			+"<td align='center'>"+"<b>"+"PROS"+"</br>"+"</td>"
+          			+"<td align='center'>"+" and "+"</td>"
+          			+"<td align='center'>"+"<b>"+"CONS"+"</br>"+"</td>"
+          		+"</tr>"
+          		+"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p1'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c1'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p2'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c2'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p3'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c3'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p4'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c4'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p5'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c5'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p6'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c6'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p7'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c7'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p8'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c8'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p9'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c9'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p10'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c10'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p11'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c11'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p12'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c12'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p13'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c13'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p14'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c14'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p15'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c15'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p16'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c16'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p17'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c17'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p18'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c18'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p19'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c19'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p20'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c20'>"+"</td>"
+          		+"</tr>"
+          	+"</table>";
+            document.getElementById("click").innerHTML="<br>"+"<center>"+"<input type='button' class='Btn' value='Outcome' onClick='resultEng()'>"+"</center>"+"<br>"+"<br>"+"<br>";
+        }
+        function goFr(){
+            document.getElementById("heading").innerHTML="<h1 align='center'>"+"Devrais-je..? Ah et puis non!"+"</h1>";
+            document.getElementById("middle").innerHTML="<center>"+"Il est maintenant temps de répondre à votre question! Je vous invite donc a entrer votre question et à remplir la table des Pour et Contre. En remplissant la table n'hésiter pas à exprimer à quel point un avantage est crucial pour vous (par exemple en l'écrivant juste en majuscule pour montrer que c'est VRAIMENT important) et à l'inverse, si c'est vraiment futile dans ce cas je vous invite à l'écrire qu'en lettre minuscule comme si ce ne serait qu'un murmure. Par la suite vous n'avez qu'à appuyer sur le bouton Verdict ci-dessous."+"</center>"+"<br>"+"<br>"+"<center>"+"<b>"+"Entrer votre question: "+"</b>"+"<input type='text' class='questionBox' id='questionFr' value=''>"+"</center>"+"<br>"
+            +"<table align='center'>"
+          		+"<tr>"
+          			+"<td align='center'>"+"<b>"+"POUR"+"</br>"+"</td>"
+          			+"<td align='center'>"+" et "+"</td>"
+          			+"<td align='center'>"+"<b>"+"CONTRE"+"</br>"+"</td>"
+          		+"</tr>"
+          		+"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p1'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c1'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p2'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c2'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p3'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c3'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p4'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c4'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p5'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='Fc5'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p6'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c6'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p7'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c7'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p8'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c8'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p9'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c9'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p10'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c10'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p11'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c11'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p12'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c12'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p13'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c13'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p14'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c14'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p15'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c15'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p16'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c16'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p17'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c17'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p18'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c18'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p19'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c19'>"+"</td>"
+          		+"</tr>"
+              +"<tr>"
+          			+"<td>"+"<input type='text' class='tableInputBox' value='' id='p20'>"+"</td>"
+          			+"<td>"+" "+"</td>"
+                +"<td>"+"<input type='text' class='tableInputBox' value='' id='c20'>"+"</td>"
+          		+"</tr>"
+          	+"</table>";
+            document.getElementById("click").innerHTML="<br>"+"<center>"+"<input type='button' class='Btn' value='Verdict' onClick='resultFr()'>"+"</center>"+"<br>"+"<br>"+"<br>";
+        }
+        function resultEng(){
+            const pros = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15","p16","p17","p18","p19","p20"];
+            const cons = ["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","c12","c13","c14","c15","c16","c17","c18","c19","c20"];
+            var totalPros=1;
+            var totalCons=1;
+            var bigTotal=1;
+            var answer="";
+
+            for(let tempId of pros){
+                if (document.getElementById(tempId).value.localeCompare("") == 0) {
+                  break;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toUpperCase()) == 0) {
+                  totalPros=+10;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toLowerCase()) == 0) {
+                  totalPros=+1;
+                }else {
+                  totalPros=+5;
+                }
+            }
+
+            for(let tempId of cons){
+                if (document.getElementById(tempId).value.localeCompare("") == 0) {
+                  break;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toUpperCase()) == 0) {
+                  totalCons=+10;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toLowerCase()) == 0) {
+                  totalCons=+1;
+                }else {
+                  totalCons=+5;
+                }
+            }
+
+            bigTotal=totalCons+totalPros;
+            if (totalCons<totalPros) {
+              answer="that you should go for it!";
+            } else if (totalCons>totalPros) {
+              answer="that you should probably not go for it sadly... Life is french bread...";
+            } else {
+              answer="that you can choose whichever you want!!"+"So here, to help you, choose between 0 and 1 and we will give you an answer!"+"<br>"+"<br>"+
+              "<center>"+"<select id='choice' class='drop'>"+
+                  "<option type='text' value='0'>"+"0"+"</option>"+
+                  "<option type='text' value='1'>"+"1"+"</option>"+
+                  "</select>"+"<br>"+"<br>"+"<input type='button' id='randomAns' class='BtnAns' value='Show me the answer!' onClick='choiceEng()'>"+
+              "</center>";
+            }
+            document.getElementById("middle").innerHTML="<h2 align='center'>"+"We have "+(Math.round(((totalPros*100)/bigTotal)*10)/10)+"% for the Pros and "+(Math.round(((totalCons*100)/bigTotal)*10)/10)+"% for the Cons. Therefore the answer to your question, "+"<i>"+document.getElementById("questionEng").value+"</i>"+", is "+answer+"</h2>";
+            document.getElementById("click").innerHTML="<br>"+"<center>"+"<input type='button' class='Btn' value='Back to Intro' onClick='reset()'>"+"<input type='button' class='Btn' value='Restart' onClick='goEng()'>";
+        }
+        function resultFr(){
+            const pros = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15","p16","p17","p18","p19","p20"];
+            const cons = ["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","c12","c13","c14","c15","c16","c17","c18","c19","c20"];
+            var totalPros=1;
+            var totalCons=1;
+            var bigTotal=1;
+            var answer="";
+
+            for(let tempId of pros){
+                if (document.getElementById(tempId).value.localeCompare("") == 0) {
+                  break;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toUpperCase()) == 0) {
+                  totalPros=+10;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toLowerCase()) == 0) {
+                  totalPros=+1;
+                }else {
+                  totalPros=+5;
+                }
+            }
+
+           for(let tempId of cons){
+                if (document.getElementById(tempId).value.localeCompare("") == 0) {
+                  break;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toUpperCase()) == 0) {
+                  totalCons=+10;
+                }else if (document.getElementById(tempId).value.localeCompare(document.getElementById(tempId).value.toLowerCase()) == 0) {
+                  totalCons=+1;
+                }else {
+                  totalCons=+5;
+                }
+            }
+
+              bigTotal=totalCons+totalPros;
+              if (totalCons<totalPros) {
+                answer="fait le, tu n'as rien à perdre!";
+              } else if (totalCons>totalPros) {
+                answer="que tu devrait probablement t'abstenir de le faire malheureusement...";
+              } else {
+                answer="que tu peut choisir l'option que tu veux!!"+"Ici, pour vous aidez, choisissez entre 0 et 1 et on vous donnera une réponse!"+"<br>"+"<br>"+
+                "<center>"+"<select id='choice' class='drop'>"+
+                    "<option type='text' value='0'>"+0+"</option>"+
+                    "<option type='text' value='1'>"+1+"</option>"+
+                    "</select>"+"<br>"+"<br>"+"<input type='button' id='randomAns' class='BtnAns' value='Montrer moi la réponse!' onClick='choiceFr()'>"+
+                "</center>";
+              }
+            document.getElementById("middle").innerHTML="<h2 align='center'>"+"On a donc "+(Math.round(((totalPros*100)/bigTotal)*10)/10)+"% Pour et "+(Math.round(((totalCons*100)/bigTotal)*10)/10)+"% Contre. Donc la réponse à votre question, "+"<i>"+document.getElementById("questionFr").value+"</i>"+", est "+answer+"</h2>";
+            document.getElementById("click").innerHTML="<br>"+"<center>"+"<input type='button' class='Btn' value='Retour à Intro' onClick='reset()'>"+"<input type='button' class='Btn' value='Recommencer' onClick='goFr()'>";
+        }
+        function choiceEng(){
+           if (document.getElementById("choice").value == Math.round(Math.random())) {
+              document.getElementById("randomAns").value="Go for it!";
+           } else {
+              document.getElementById("randomAns").value="Sorry, don't go for it...";
+           }
+        }
+        function choiceFr(){
+            if (document.getElementById("choice").value == Math.round(Math.random())) {
+              document.getElementById("randomAns").value="Fait le!";
+            } else {
+              document.getElementById("randomAns").value="Désolé, tu ne devrais pas le faire...";
+            }
+        }
+        function reset(){
+            document.getElementById("heading").innerHTML="<h1 align='center'>"+" Should I... Or not? "+"</h1>"+
+            "<h2 align='center'>"+" Devrais-je..? Ah et puis non! "+"</h2>"+"<br>";
+            document.getElementById("middle").innerHTML="<p align='center'>"+" In life we're all bound to have period of serious questionning. Be it about your far futur or the near one. And sometime answering some of these questions is extremely hard. Should I stop eating meat or no? Should I keep a class or drop it? Should I start to workout or it can wait until next new year? Should I go work ort watch one more episode of my tv show (just one more)?  Should I buy the shoes... or not? Here is the solution that will help guide your choice! Now to continue select your prefered language. Which one is it gonna be, English or French?"+"</p>"+
+            "<p align='center'>"+" Dans la vie on se retrouve tous à un certain point face à de sérieux questionnement. Que ce soit des questions sur notre futur à court ou long terme. Par moment répondre à ces questions peut être extrêmement complexe. Devrais-je arrêter de manger de la viande ou non? Devrais-je garder tel cours ou le laisser tomber? Devrais-je commencer à m'entraîner ou juste attendre les résolutions du prochain nouvel an? Devrais-je travailler ou écouter un autre épisode de ma série télévisée (juste un de plus)? Dire oui au chaussure... ou ne pas repartir avec une énième nouvelle paire de chaussure? Voici la solution qui va vous aidez en vous guidant à travers ces choix complexes! Pour continuer choisissez votre langage de préférence. Lequel ce sera, l'anglais ou le français?"+"</p>"+"<br>";
+            document.getElementById("click").innerHTML="<center>"+
+                "<input type='button' class='Btn' value='English/Anglais' onClick='goEng()'>"+
+                "<input type='button' class='Btn' value='Français/French' onClick='goFr()'>"+
+            "</center>";
+        }
+      </script>
+
+  </head>
+  <body>
+    <br>
+  <div id="heading"><h1 align='center'> Should I... Or not? </h1> <!-- English title -->
+  <h2 align='center'> Devrais-je..? Ah et puis non! </h2></div> <!-- French title -->
+  <br>
+  <div id="middle" class="text"><p align='center'> In life we're all bound to have period of serious questionning. Be it about your far futur or the near one. And sometime answering some of these questions is extremely hard. Should I stop eating meat or no? Should I keep a class or drop it? Should I start to workout or it can wait until next new year? Should I go work ort watch one more episode of my tv show (just one more)?  Should I buy the shoes... or not? Here is the solution that will help guide your choice! Now to continue select your prefered language. Which one is it gonna be, English or French? </p> <!-- English introduction, only there first time opening, after if want to reuse reset to step after this one. -->
+  <p align='center'> Dans la vie on se retrouve tous à un certain point face à de sérieux questionnement. Que ce soit des questions sur notre futur à court ou long terme. Par moment répondre à ces questions peut être extrêmement complexe. Devrais-je arrêter de manger de la viande ou non? Devrais-je garder tel cours ou le laisser tomber? Devrais-je commencer à m'entraîner ou juste attendre les résolutions du prochain nouvel an? Devrais-je travailler ou écouter un autre épisode de ma série télévisée (juste un de plus)? Dire oui au chaussure... ou ne pas repartir avec une énième nouvelle paire de chaussure? Voici la solution qui va vous aidez en vous guidant à travers ces choix complexes! Pour continuer choisissez votre langage de préférence. Lequel ce sera, l'anglais ou le français? </p></div> <!-- French introduction -->
+    <br>
+  <div id="click"><center>
+      <input type="button" class="Btn" value="English/Anglais" onClick="goEng()">
+      <input type="button" class="Btn" value="Français/French" onClick="goFr()">
+  </center></div>
+  </body>
+</html>
